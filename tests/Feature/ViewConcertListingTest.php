@@ -2,11 +2,16 @@
 
 namespace Tests\Feature;
 
+use App\Models\Concert;
+use Carbon\Carbon;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ViewConcertListingTest extends TestCase
 {
+    use DatabaseMigrations;
+
     /** @test */
 
     function user_can_view_a_concert_listing()
